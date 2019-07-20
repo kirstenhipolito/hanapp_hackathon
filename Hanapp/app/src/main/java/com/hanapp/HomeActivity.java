@@ -8,6 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ImageView;
+
+import android.app.Activity;
+
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +37,8 @@ public class HomeActivity extends AppCompatActivity
     private TextView reward_pt;
     private Button settings_btn;
     private Button logout_btn;
+
+    private GridView gridview;
 
     String login = null;
 
@@ -57,6 +68,22 @@ public class HomeActivity extends AppCompatActivity
         reward_pt = (TextView) navigationView.findViewById(R.id.reward_point);
         settings_btn = (Button) navigationView.findViewById(R.id.settings);
         logout_btn = (Button) navigationView.findViewById(R.id.logout);
+
+        setContentView(R.layout.activity_home);
+
+        gridview = (GridView) findViewById(R.id.gridview);
+        gridview.setAdapter(new ImageAdapter(this));
+
+        gridview.setOnItemClickListener(new OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent,
+                                    View v, int position, long id){
+                // Send intent to SingleViewActivity
+                Intent i = new Intent(getApplicationContext(), ProductPageActivity.class);
+                // Pass image index
+                i.putExtra("id", position);
+                startActivity(i);
+            }
+        });
 
         Bundle data = getIntent().getExtras();
         if (data != null) {
