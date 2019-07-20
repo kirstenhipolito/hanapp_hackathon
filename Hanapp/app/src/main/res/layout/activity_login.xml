@@ -5,59 +5,74 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#FFFCFC"
     android:paddingLeft="@dimen/login_horizontal_margin"
     android:paddingTop="@dimen/login_vertical_margin"
     android:paddingRight="@dimen/login_horizontal_margin"
     android:paddingBottom="@dimen/login_vertical_margin"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="297dp"
+        android:layout_height="534dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/bg"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="66dp" />
+
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="455dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/prompt_email"
+        android:fontFamily="@font/Roboto-Light"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
+        android:fontFamily="@font/Roboto-Light"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
-    <Button
+    <ImageButton
         android:id="@+id/login"
-        android:layout_width="125dp"
-        android:layout_height="39dp"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
-        android:text="LOGIN"
-        android:tint="@drawable/bg_button"
+        android:src="@drawable/Group"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2" />
+        android:background="@android:color/transparent"
+        app:layout_constraintVertical_bias="0.23" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -81,14 +96,14 @@
         android:layout_height="27dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="88dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.053">
+        app:layout_constraintVertical_bias="0.315">
 
         <TextView
             android:id="@+id/sign_up_text"
@@ -98,6 +113,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:text="No account yet?"
+            android:fontFamily="@font/Roboto-Light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -110,10 +126,13 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:clickable="true"
-            android:tint="@drawable/bg_button"
+            android:fontFamily="@font/Roboto-Light"
             android:text="@string/sign_up"
+            android:tint="@drawable/bg_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
