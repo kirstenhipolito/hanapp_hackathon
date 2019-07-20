@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     public static final String LoginObject = "Login";
 
     private EditText email_ad, password;
-    private Button is_login;
+    private ImageButton is_login;
     private TextView is_sign_up;
     private String input_id;
     private EditText email_, user_, pass_;
@@ -35,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
 
         email_ad = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        is_login = (Button) findViewById(R.id.login);
+        is_login = (ImageButton) findViewById(R.id.login);
         is_sign_up = (TextView) findViewById(R.id.sign_up_button);
 
         password.setOnEditorActionListener(new TextView.OnEditorActionListener() {
