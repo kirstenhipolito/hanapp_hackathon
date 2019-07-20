@@ -2,10 +2,10 @@ package com.hanapp.barcode;
 
 import android.content.Context;
 
-import com.hanapp.camera.GraphicOverlay;
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.hanapp.camera.GraphicOverlay;
 
 /**
  * Factory for creating a tracker and associated graphic to be associated with a new barcode.  The

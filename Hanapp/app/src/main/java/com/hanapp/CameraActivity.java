@@ -1,9 +1,5 @@
 package com.hanapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -26,17 +22,21 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.hanapp.barcode.BarcodeGraphic;
-import com.hanapp.barcode.BarcodeGraphicTracker;
-import com.hanapp.barcode.BarcodeTrackerFactory;
-import com.hanapp.camera.CameraSourcePreview;
-import com.hanapp.camera.CameraSource;
-import com.hanapp.camera.GraphicOverlay;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
+import com.hanapp.barcode.BarcodeGraphic;
+import com.hanapp.barcode.BarcodeGraphicTracker;
+import com.hanapp.barcode.BarcodeTrackerFactory;
+import com.hanapp.camera.CameraSource;
+import com.hanapp.camera.CameraSourcePreview;
+import com.hanapp.camera.GraphicOverlay;
 
 import java.io.IOException;
 
@@ -153,7 +153,7 @@ public class CameraActivity extends AppCompatActivity implements BarcodeGraphicT
         // Auto Focus
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
             builder = builder.setFocusMode(
-                    autoFocus ? android.hardware.Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE : null);
+                    autoFocus ? Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE : null);
         }
 
         // Use Flash
