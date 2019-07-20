@@ -9,13 +9,11 @@
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#C5D2DB"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -30,8 +28,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile2" />
 
-=======
->>>>>>> 0f4dcb340fa913342b308e34cf2b574b0572c43a
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
@@ -88,7 +84,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="#C5D2DB"
         app:layout_constraintTop_toBottomOf="@+id/username">
 
         <Button

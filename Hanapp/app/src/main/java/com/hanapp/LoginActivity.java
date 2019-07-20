@@ -67,12 +67,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void showSignUp(){
-        Button submit;
-        Button cancel;
+        ImageButton submit;
+        ImageButton cancel;
 
         signup_dialog.setContentView(R.layout.signup);
-        submit = (Button) signup_dialog.findViewById(R.id.submit_id);
-        cancel = (Button) signup_dialog.findViewById(R.id.cancel_id);
+        submit = (ImageButton) signup_dialog.findViewById(R.id.submit_id);
+        cancel = (ImageButton) signup_dialog.findViewById(R.id.cancel_id);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
