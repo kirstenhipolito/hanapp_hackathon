@@ -1,10 +1,10 @@
 # hanapp_hackathon
-Hanapp: entry for Accenture Hackathon \n
+Hanapp: entry for Accenture Hackathon <br/> <br/>
 
 
-TEAM PORARY LANG \n
-Members: \n
-Colita, Chester \n
-Cruz, Meygen \n
-Hipolito, Kirsten \n
-Keh, Jefferson \n
+TEAM PORARY LANG <br/>
+Members: <br/>
+Colita, Chester <br/>
+Cruz, Meygen <br/>
+Hipolito, Kirsten <br/>
+Keh, Jefferson <br/>
