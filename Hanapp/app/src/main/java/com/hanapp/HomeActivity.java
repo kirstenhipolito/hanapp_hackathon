@@ -69,7 +69,7 @@ public class HomeActivity extends AppCompatActivity
         settings_btn = (ImageButton) navigationView.findViewById(R.id.settings);
         logout_btn = (ImageButton) navigationView.findViewById(R.id.logout);
 
-        setContentView(R.layout.activity_home);
+//        setContentView(R.layout.activity_home);
 
         gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ImageAdapter(this));
