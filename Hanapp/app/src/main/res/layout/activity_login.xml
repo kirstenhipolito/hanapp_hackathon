@@ -15,7 +15,7 @@
     <ImageView
         android:id="@+id/background"
         android:layout_width="297dp"
-        android:layout_height="534dp"
+        android:layout_height="470dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="60dp"

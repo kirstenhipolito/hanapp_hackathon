@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,7 +24,7 @@ public class InputFormActivity extends AppCompatActivity {
     private EditText manufacturer;
     private EditText itemPrice;
     private EditText locationName;
-    private Button submitInfo;
+    private ImageButton submitInfo;
     private ImageView itemPicture;
     Barcode barcode = null;
     Dialog promptDialog;
@@ -38,7 +39,7 @@ public class InputFormActivity extends AppCompatActivity {
         manufacturer = (EditText) findViewById(R.id.manufacturer_name);
         itemPrice = (EditText) findViewById(R.id.price_item);
         locationName = (EditText) findViewById(R.id.location_edit);
-        submitInfo = (Button) findViewById(R.id.submit_detail);
+        submitInfo = (ImageButton) findViewById(R.id.submit_detail);
         itemPicture = (ImageView) findViewById(R.id.item_pic);
 
         Intent data = getIntent();
@@ -79,14 +80,14 @@ public class InputFormActivity extends AppCompatActivity {
     }
 
     public void showPrompt(Boolean prompt_exit) {
-        Button cancel;
-        Button submit;
+        ImageButton cancel;
+        ImageButton submit;
         TextView prompt;
 
         promptDialog.setContentView(R.layout.prompt);
         prompt = (TextView) promptDialog.findViewById(R.id.prompt_text);
-        cancel = (Button) promptDialog.findViewById(R.id.submit_no);
-        submit = (Button) promptDialog.findViewById(R.id.submit_yes);
+        cancel = (ImageButton) promptDialog.findViewById(R.id.submit_no);
+        submit = (ImageButton) promptDialog.findViewById(R.id.submit_yes);
 
         cancel.setOnClickListener(new View.OnClickListener(){
             @Override
