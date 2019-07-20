@@ -35,8 +35,8 @@ public class HomeActivity extends AppCompatActivity
     private TextView email_ad_str;
     private TextView username_str;
     private TextView reward_pt;
-    private Button settings_btn;
-    private Button logout_btn;
+    private ImageButton settings_btn;
+    private ImageButton logout_btn;
 
     private GridView gridview;
 
@@ -66,8 +66,8 @@ public class HomeActivity extends AppCompatActivity
         email_ad_str = (TextView) navigationView.findViewById(R.id.email_ad);
         username_str = (TextView) navigationView.findViewById(R.id.username);
         reward_pt = (TextView) navigationView.findViewById(R.id.reward_point);
-        settings_btn = (Button) navigationView.findViewById(R.id.settings);
-        logout_btn = (Button) navigationView.findViewById(R.id.logout);
+        settings_btn = (ImageButton) navigationView.findViewById(R.id.settings);
+        logout_btn = (ImageButton) navigationView.findViewById(R.id.logout);
 
         setContentView(R.layout.activity_home);
 
