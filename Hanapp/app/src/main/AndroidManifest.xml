@@ -29,13 +29,10 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
 
-        <activity android:name="com.hanapp.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name="com.hanapp.LoginActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
+
         <activity
             android:name="com.hanapp.CameraActivity"
             android:windowSoftInputMode="adjustNothing" />
@@ -44,7 +41,14 @@
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name="com.hanapp.HomeActivity"
-            android:windowSoftInputMode="adjustNothing" />
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

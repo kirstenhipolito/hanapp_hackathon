@@ -184,20 +184,32 @@
         app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent="0.03" />
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.0"></LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.571"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline13"-->
+        <!--app:layout_constraintVertical_bias="0.0"></LinearLayout>-->
 
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="59dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

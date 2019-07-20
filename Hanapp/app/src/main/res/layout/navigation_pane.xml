@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/Gray_Shadow"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -15,6 +15,7 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
@@ -29,37 +30,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile2" />
 
+=======
+>>>>>>> 0f4dcb340fa913342b308e34cf2b574b0572c43a
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_black"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        tools:layout_editor_absoluteY="170dp" />
 
     <TextView
-        android:id="@+id/email_ad"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:id="@+id/hello_string"
+        android:layout_width="115dp"
+        android:layout_height="75dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/nav_header_subtitle"
+        android:fontFamily="@font/roboto_black"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Hello,"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        tools:layout_editor_absoluteY="123dp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/email_ad"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginTop="28dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:text="@string/nav_header_subtitle"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.055"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/username" />-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="60dp"
-        android:background="@android:color/white"
+        android:background="@color/Gray_Shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -97,13 +121,13 @@
             android:id="@+id/reward_link"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="8dp"
-            android:text="Reward Points"
+            android:text="You have these reward points:"
             android:textColor="@android:color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.291"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,8 +140,10 @@
             android:layout_marginEnd="8dp"
             android:text="3.40"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reward_link" />
     </androidx.constraintlayout.widget.ConstraintLayout>

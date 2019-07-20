@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -19,7 +20,7 @@ import com.google.android.material.navigation.NavigationView;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
-    private Button cam_button;
+    private ImageButton cam_button;
 
     //Navigation Pane
     private TextView email_ad_str;
@@ -35,7 +36,7 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_info);
 
-        cam_button = (Button) findViewById(R.id.camera_button);
+        cam_button = (ImageButton) findViewById(R.id.camera_button);
 
         cam_button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
