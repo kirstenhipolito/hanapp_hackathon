@@ -18,9 +18,11 @@
         android:layout_height="534dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/bg"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="66dp" />
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
 
     <EditText
         android:id="@+id/username"
@@ -29,8 +31,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="455dp"
         android:layout_marginEnd="24dp"
-        android:hint="@string/prompt_email"
         android:fontFamily="@font/roboto_light"
+        android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,9 +47,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
+        android:fontFamily="@font/roboto_light"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
-        android:fontFamily="@font/roboto_light"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
@@ -65,13 +67,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
         android:src="@drawable/group"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        android:background="@android:color/transparent"
         app:layout_constraintVertical_bias="0.23" />
 
     <ProgressBar
@@ -112,8 +114,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:text="No account yet?"
             android:fontFamily="@font/roboto_light"
+            android:text="No account yet?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
